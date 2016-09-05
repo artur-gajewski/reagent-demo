@@ -13,4 +13,5 @@
     [:a {:href "/"} "Back to the main page"]]
 
    (when @state/revealed
-     [:div [:h3 "You clicked on the button!!!"]])])
+     [:div 
+      [:h3 "You clicked on the button!!!"]])])
