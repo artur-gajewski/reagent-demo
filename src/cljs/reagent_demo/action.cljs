@@ -9,3 +9,9 @@
 
 (defn add-item [item]
   (reset! state/items (concat [item] @state/items)))
+
+(defn set-filter-text [text]
+  (reset! state/filter-text text))
+
+(defn reset-filter-text []
+  (reset! state/filter-text ""))

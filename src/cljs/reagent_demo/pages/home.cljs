@@ -9,4 +9,7 @@
     [:a {:href "/about"} "» Read about Reagent"]]
 
    [:div
-    [:a {:href "/items"} "» Create item list"]]])
+    [:a {:href "/items"} "» Create item list"]]
+
+   [:div
+    [:a {:href "/filter-items"} "» Filter a list"]]])
