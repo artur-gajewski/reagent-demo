@@ -15,3 +15,4 @@ pom.xml.asc
 /.env
 .idea
 *.iml
+/env/prod/cljs/myproject

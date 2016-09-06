@@ -1,5 +1,5 @@
 (ns reagent-demo.pages.home
-  (:require [reagent-demo.components.title :as title :refer [render]]))
+  (:require [reagent-demo.components.title :as title]))
 
 (defn home []
   [:div

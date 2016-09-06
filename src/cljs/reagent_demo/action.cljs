@@ -1,8 +1,8 @@
 (ns reagent-demo.action
-  (:require [reagent-demo.state :refer [revealed]]))
+  (:require [reagent-demo.state :as state]))
 
 (defn toggle-message-visibility []
-  (reset! revealed (not @revealed)))
+  (reset! state/revealed (not @state/revealed)))
 
 (defn reset-toggle-message []
-  (reset! revealed false))
+  (reset! state/revealed false))
