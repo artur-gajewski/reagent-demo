@@ -5,6 +5,13 @@ transpiles your cljs code to native javascript React application.
 
 This repository consists of Reagent application template containing routing and classes for components, actions and application state to get you started right away.
 
+In this sample application, you will be able to:
+
+- Use router to navigate to different pages.
+- Render and remove a component based on onClick event.
+- Create list of items from an input field.
+- Filter a visible list based on input.
+
 #### Requirements
 
 1. Install Leiningen
