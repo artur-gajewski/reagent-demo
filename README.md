@@ -18,6 +18,14 @@ This repository consists of Reagent application template containing routing and 
 
 http://localhost:3449
 
+#### Create self-contained package
+
+    $ lein uberjar
+    
+    $ java -jar reagent-demo.jar    
+
+Fire up your browser at http://localhost:3000 and kaboom!
+
 #### More information
 
 https://reagent-project.github.io
