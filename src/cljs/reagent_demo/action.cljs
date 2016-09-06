@@ -6,3 +6,6 @@
 
 (defn reset-toggle-message []
   (reset! state/revealed false))
+
+(defn add-item [item]
+  (reset! state/items (concat [item] @state/items)))

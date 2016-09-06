@@ -13,6 +13,7 @@
                  [ring/ring-defaults "0.2.1"]
                  [compojure "1.5.1"]
                  [hiccup "1.0.5"]
+                 [cljs-uuid "0.0.4"]
                  [yogthos/config "0.8"]
                  [org.clojure/clojurescript "1.9.216"
                   :scope "provided"]
