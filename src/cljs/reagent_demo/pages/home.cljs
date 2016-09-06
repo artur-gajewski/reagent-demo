@@ -6,4 +6,7 @@
    [title/render "Welcome to Reagent demo"]
 
    [:div
-    [:a {:href "/about"} "Go to about page"]]])
+    [:a {:href "/about"} "» Read about Reagent"]]
+
+   [:div
+    [:a {:href "/items"} "» Create item list"]]])

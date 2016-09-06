@@ -3,13 +3,10 @@
               [reagent.session :as session]
               [secretary.core :as secretary :include-macros true]
               [accountant.core :as accountant]
-              [reagent-demo.state :as state]
               [reagent-demo.action :as action]
               [reagent-demo.pages.home :refer [home]]
-              [reagent-demo.pages.about :refer [about]]))
-
-;; -------------------------
-;; Routes
+              [reagent-demo.pages.about :refer [about]]
+              [reagent-demo.pages.items :refer [items]]))
 
 (defn current-page []
   [:div [(session/get :current-page)]])
@@ -22,8 +19,8 @@
                     (action/reset-toggle-message)
                     (session/put! :current-page #'about))
 
-;; -------------------------
-;; Initialize app
+(secretary/defroute "/items" []
+                    (session/put! :current-page #'items))
 
 (defn mount-root []
   (reagent/render [current-page] (.getElementById js/document "app")))
