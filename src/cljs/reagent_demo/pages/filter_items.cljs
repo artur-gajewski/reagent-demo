@@ -3,8 +3,7 @@
             [reagent-demo.components.title :as title]
             [reagent-demo.components.filter-item-form :as filter-item-form]
             [reagent-demo.components.item :as item]
-            [reagent.core :as reagent]
-            [clojure.string :as string :refer [lower-case includes?]]))
+            [clojure.string :refer [lower-case includes?]]))
 
 (defn filter-items []
   [:div
@@ -23,10 +22,12 @@
     [filter-item-form/render]]
 
     (let [items @state/filtered-items
-          filtered (doall
-                     (filter
+          filtered (if-not (empty? @state/filter-text)
+                     (doall
+                      (filter
                        #(-> (lower-case (% :description)) (includes? (lower-case @state/filter-text)))
-                       items))]
+                       items))
+                     items)]
        [:div
         [:ul
          (for [{:keys [id description]} filtered]
