@@ -2,10 +2,10 @@
   (:require [reagent-demo.state :as state]))
 
 (defn toggle-message-visibility []
-  (reset! state/revealed (not @state/revealed)))
+  (reset! state/message-revealed (not @state/message-revealed)))
 
 (defn reset-toggle-message []
-  (reset! state/revealed false))
+  (reset! state/message-revealed false))
 
 (defn add-item [item]
   (reset! state/items (concat [item] @state/items)))

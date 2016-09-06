@@ -16,7 +16,7 @@
    [:div
     [:a {:href "/"} "Back to the main page"]]
 
-   (when @state/revealed
+   (when @state/message-revealed
      [:div
       [:h3 "Reagent is React with ClojureScript"]
       [:p
