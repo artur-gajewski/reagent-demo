@@ -3,7 +3,7 @@
 
 (defn home []
   [:div
-   (title/render "Welcome to Reagent demo")
+   [title/render "Welcome to Reagent demo"]
 
    [:div
     [:a {:href "/about"} "Go to about page"]]])

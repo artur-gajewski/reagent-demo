@@ -3,6 +3,7 @@
               [reagent.session :as session]
               [secretary.core :as secretary :include-macros true]
               [accountant.core :as accountant]
+              [reagent-demo.state :as state]
               [reagent-demo.action :as action]
               [reagent-demo.pages.home :refer [home]]
               [reagent-demo.pages.about :refer [about]]))
