@@ -40,9 +40,7 @@ Actions modify application state which propagates to all affected components.
 
     $ lein figwheel
 
-#### Open browser to run this demo
-
-http://localhost:3449
+Open your browser at http://localhost:3449
 
 #### Create self-contained package
 
