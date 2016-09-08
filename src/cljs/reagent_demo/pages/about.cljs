@@ -8,7 +8,7 @@
    [title/render "About Reagent"]
 
    [:div
-    [:button {:class "toggle-button" :on-click #(action/toggle-message-visibility)} "Toggle message on/off"]]
+    [:button {:class "toggle-button" :on-click #(action/toggle-message-visibility)} "Toggle information text on/off"]]
 
    [:div
     [:a {:href "/"} "« Back to the main page"]]

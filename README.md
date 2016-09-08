@@ -11,6 +11,7 @@ In this sample application, you will be able to:
 - Render and remove a component based on onClick event.
 - Create list of items from an input field.
 - Filter a visible list based on input.
+- Load a page with route parameter
 
 #### Requirements
 

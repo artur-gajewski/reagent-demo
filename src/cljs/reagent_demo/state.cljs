@@ -19,3 +19,5 @@
                                        {:id 10 :description "October"}
                                        {:id 11 :description "November"}
                                        {:id 12 :description "December"}]))
+
+(defonce item-id (reagent/atom nil))

@@ -1,7 +1,7 @@
 (ns reagent-demo.pages.filter-items
   (:require [reagent-demo.state :as state]
             [reagent-demo.components.title :as title]
-            [reagent-demo.components.filter-item-form :as filter-item-form]
+            [reagent-demo.components.filter_item_form :as filter-item-form]
             [reagent-demo.components.item :as item]
             [clojure.string :refer [lower-case includes?]]))
 

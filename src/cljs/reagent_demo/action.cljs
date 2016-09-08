@@ -15,3 +15,6 @@
 
 (defn reset-filter-text []
   (reset! state/filter-text ""))
+
+(defn reset-item-id [id]
+  (reset! state/item-id id))

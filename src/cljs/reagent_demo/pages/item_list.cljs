@@ -1,10 +1,10 @@
-(ns reagent-demo.pages.items
+(ns reagent-demo.pages.item-list
   (:require [reagent-demo.state :as state]
             [reagent-demo.components.title :as title]
             [reagent-demo.components.item-form :as item-form]
             [reagent-demo.components.item :as item]))
 
-(defn items []
+(defn item-list []
   [:div
    [title/render "Item list"]
 
