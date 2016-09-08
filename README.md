@@ -13,6 +13,24 @@ In this sample application, you will be able to:
 - Filter a visible list based on input.
 - Load a page with route parameter
 
+#### Architecture
+
+When you load the app, Route matches requested uri to Page component. Matched route can trigger action.
+
+All pages are state aware. Components use only passed properties and modify state by calling actions. 
+
+Actions modify application state which propagates to all affected components.
+
+
+               +-------------------------------------------+
+               |                                           |
+               |                                           +
+    Core --+ Route --+ Page --+ Component --+ Action --+ State --+ 
+                         +                                       | 
+                         |                                       | 
+                         +---------------------------------------+
+
+
 #### Requirements
 
 1. Install Leiningen
