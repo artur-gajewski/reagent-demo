@@ -52,6 +52,10 @@ http://localhost:3449
 
 Fire up your browser at http://localhost:3000 and kaboom!
 
+#### See it in action!
+
+https://reagent.arturgajewski.com
+
 #### More information
 
 https://reagent-project.github.io
