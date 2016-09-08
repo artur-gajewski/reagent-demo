@@ -14,7 +14,6 @@
   [:div [(session/get :current-page)]])
 
 (secretary/defroute "/" []
-                    (action/reset-toggle-message)
                     (session/put! :current-page #'home))
 
 (secretary/defroute "/about" []
