@@ -9,7 +9,7 @@ pom.xml.asc
 /.lein-*
 /.nrepl-port
 /resources/public/js
-/recourses/css/site.min.css
+/resources/public/css/site.min.css
 /out
 /.repl
 *.log
