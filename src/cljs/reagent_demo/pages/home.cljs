@@ -15,4 +15,7 @@
     [:a {:href "/filter-items"} "» Filter a list"]]
 
    [:div
-    [:a {:href "/item/3"} "» Route parameter"]]])
+    [:a {:href "/item/3"} "» Route parameter"]]
+
+   [:div
+    [:a {:href "https://github.com/artur-gajewski/reagent-demo"} "» Source code"]]])
