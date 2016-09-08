@@ -15,11 +15,11 @@ In this sample application, you will be able to:
 
 #### Architecture
 
-When you load the app, Route matches requested uri to Page component. Matched route can trigger action.
+- When you load the app, router matches requested uri to a page component. Matched route can also trigger actions.
 
-All pages are state aware. Components use only passed properties and modify state by calling actions. 
+- All pages are state aware. Components use only passed properties and modify state by calling actions. 
 
-Actions modify application state which propagates to all affected components.
+- Actions modify application state which propagates to all affected components.
 
 
                +-------------------------------------------+
