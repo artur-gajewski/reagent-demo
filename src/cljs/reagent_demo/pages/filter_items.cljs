@@ -31,4 +31,4 @@
        [:div
         [:ul
          (for [{:keys [id description]} filtered]
-           ^{:key id} [item/render description])]])])
+           ^{:key id} [item/render id description])]])])

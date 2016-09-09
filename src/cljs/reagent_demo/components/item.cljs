@@ -1,4 +1,5 @@
-(ns reagent-demo.components.item)
+(ns reagent-demo.components.item
+  (:require [reagent-demo.action :as action]))
 
-(defn render [label]
-  [:li label])
+(defn render [id description]
+  [:li description])

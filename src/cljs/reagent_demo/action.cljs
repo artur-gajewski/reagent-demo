@@ -10,6 +10,9 @@
 (defn add-item [item]
   (reset! state/items (concat [item] @state/items)))
 
+(defn remove-item [id]
+  (reset! state/items (vec (remove #(= id (:id %)) @state/items))))
+
 (defn set-filter-text [text]
   (reset! state/filter-text text))
 
