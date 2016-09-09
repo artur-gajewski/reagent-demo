@@ -22,14 +22,13 @@ All pages are state aware. Components use only passed properties and modify stat
 Actions modify application state which propagates to all affected components.
 
 
-               +--------------------------------------------+
-               |                                            |
-               |                                            +
+               +----------------------------------+
+               |                                  |
+               |                                  +
     Core --+ Router --+ Page --+ Component --+ Action --+ State --+ 
                           +                                       | 
                           |                                       | 
                           +---------------------------------------+
-
 
 #### Requirements
 
