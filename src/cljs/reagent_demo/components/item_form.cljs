@@ -16,9 +16,10 @@
 
 (defn render []
   [:div
-   [:input {:type "text"
-            :placeholder "Enter item description"
-            :value (:description @item-data)
-            :onChange #(swap! item-data assoc
-                              :description (-> % .-target .-value))}]
-   [:button {:onClick #(submit-form)} "Add item"]])
+   [:form {:onSubmit (fn [e] (.preventDefault e))}
+    [:input {:type "text"
+             :placeholder "Enter item description"
+             :value (:description @item-data)
+             :onChange #(swap! item-data assoc
+                               :description (-> % .-target .-value))}]
+    [:button {:onClick #(submit-form)} "Add item"]]])
